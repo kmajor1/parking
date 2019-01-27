@@ -3,19 +3,12 @@ var db = require("../models");
 module.exports = function (app) {
   // render html page that displays single listing 
 
-  // render index page
+  // render splash page
   app.get("/", function(req,res) {
     res.render('index', {
       layout: 'main'
     })
   })
-
-  // test map route
-  app.get("/map", function (req, res) {
-    res.render("maptest", {
-      layout: 'mainmap'
-    });
-  });
 
   app.get("/parkingSpots", function (req, res) {
     db.parkingSpot.findAll({
