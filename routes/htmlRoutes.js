@@ -37,8 +37,8 @@ module.exports = function (app) {
   });
 
   // sell a parking spot 
-  app.get("/sellaspot", function (req, res) {
-    res.render("vendorInput");
+  app.get("/sellspot", function (req, res) {
+    res.render("sellspot");
   });
 
 
