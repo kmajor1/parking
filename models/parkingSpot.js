@@ -38,12 +38,8 @@ module.exports = function (sequelize, DataTypes) {
   })
 
   parkingSpot.associate = function (models) {
-    parkingSpot.hasOne(models.address, {
-      onDelete: 'cascade'
-    })
-    parkingSpot.hasOne(models.lease, {
-      onDelete: 'cascade'
-    })
+    
+    parkingSpot.hasMany(models.lease)
   }
 
   return parkingSpot

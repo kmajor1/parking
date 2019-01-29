@@ -21,11 +21,7 @@ module.exports = function(sequelize, DataTypes) {
   
 
   lease.associate = function(models) {
-    lease.belongsTo(models.parkingSpot, {
-      foreignKey: {
-        allowNull: false 
-      }
-    })
+    lease.belongsTo(models.parkingSpot)
     
   }
   return lease;
