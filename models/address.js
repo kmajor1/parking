@@ -33,9 +33,7 @@ module.exports = function(sequelize, DataTypes) {
     address.belongsTo(models.parkingSpot, {
       foreignKey: 'parkingSpotId'
     })
-    address.belongsTo(models.lease, {
-      foreignKey: 'leaseId'
-    })
+    
   }
   
   return address;
