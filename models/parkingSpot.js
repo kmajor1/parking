@@ -16,7 +16,8 @@ module.exports = function (sequelize, DataTypes) {
     },
     street_dir: {
       type: DataTypes.ENUM,
-      values: ['N','E','S','W','NE','SE','SW','NW']
+      values: ['N','E','S','W','NE','SE','SW','NW'],
+      allowNull: true
     },
     city: {
       type: DataTypes.STRING
