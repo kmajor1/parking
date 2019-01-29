@@ -8,13 +8,16 @@ module.exports = function (sequelize, DataTypes) {
     unit: {
       type: DataTypes.STRING
     },
-    street_number: {
+    streetNumber: {
       type: DataTypes.INTEGER
     },
-    street_name: {
+    streetName: {
       type: DataTypes.STRING
     },
-    street_dir: {
+    streetType: {
+      type: DataTypes.STRING
+    },
+    streetDir: {
       type: DataTypes.ENUM,
       values: ['N','E','S','W','NE','SE','SW','NW'],
       allowNull: true
@@ -22,7 +25,11 @@ module.exports = function (sequelize, DataTypes) {
     city: {
       type: DataTypes.STRING
     },
-    postal_code: {
+    province: {
+      type: DataTypes.ENUM,
+      values: ['ON']
+    },
+    postalCode: {
       type: DataTypes.STRING,
       validate: {
         len: [6]
