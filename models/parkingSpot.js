@@ -4,7 +4,29 @@ module.exports = function (sequelize, DataTypes) {
     isAvailable: DataTypes.BOOLEAN,
     spot_description: DataTypes.STRING,
     lng: DataTypes.FLOAT,
-    lat: DataTypes.FLOAT
+    lat: DataTypes.FLOAT,
+    unit: {
+      type: DataTypes.STRING
+    },
+    street_number: {
+      type: DataTypes.INTEGER
+    },
+    street_name: {
+      type: DataTypes.STRING
+    },
+    street_dir: {
+      type: DataTypes.ENUM,
+      values: ['N','E','S','W','NE','SE','SW','NW']
+    },
+    city: {
+      type: DataTypes.STRING
+    },
+    postal_code: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [6]
+      }
+    }
   })
 
   parkingSpot.associate = function (models) {
