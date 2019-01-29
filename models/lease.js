@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var lease = sequelize.define("lease", {
+    isActiveLease: DataTypes.BOOLEAN,
     firstNameLeasor: DataTypes.STRING,
     lastNameLeasor: DataTypes.STRING, 
     dobLeasor: DataTypes.DATEONLY,
