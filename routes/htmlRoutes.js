@@ -38,7 +38,9 @@ module.exports = function (app) {
 
   // sell a parking spot 
   app.get("/sellspot", function (req, res) {
-    res.render("inputSpotDetail");
+    res.render("inputSpot", {
+      layout: 'inputForm'
+    });
   });
 
 
