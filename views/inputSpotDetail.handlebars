@@ -1,13 +1,108 @@
 <div class="container">
-    <h1>About your spot</h1>
-    <form>
-        <div class="form-row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for=""
-            </div>
+    <div class="row">
+        <div id="formControls" class="col-md-8 mt-3">
+            <form>
+                <div class="row">
+                    <h2 class="p-2">About you</h2>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                        <input class="form-control" placeholder="First Name" id="firstNameLeasor" type="text">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input class="form-control" placeholder="Last Name" id="lastNameLeasor" type="text">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                        <label for="leasorDob">Date of Birth</label>
+                        <input class="form-control" id="leasorDob" type="date">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <h2 class="p-2">About your parking spot</h2>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-2 form-group">
+                        <input class="form-control" id="parkingSpotUnit" type="text" placeholder="Unit #">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input class="form-control" id="parkingSpotStreetNumber" type="text" placeholder="Street #">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input class="form-control" id="parkingSpotStreetName" type="text" placeholder="Street Name">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <select class="form-control" id="parkingSpotStreetType">
+                            <option id="ave">Ave</option>
+                            <option id="blvd">Blvd</option>
+                            <option id="cres">Cres</option>
+                            <option id="road">Rd</option>
+                            <option id="street">St</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <select class="form-control" id="parkingSpotStreetDir">
+                            <option id="null">-</option>
+                            <option id="N">N</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input id="leasorCity" class="form-control" type="text" placeholder="City">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select id="leasorProvince" class="form-control">
+                            <option id="ON">Ontario</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input id="leasorPostalCode" class="form-control" type="text" placeHolder="A0A 1A1">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <textarea id="spotDescription"  rows="5" cols="80"> 
+                        </textarea>
+                        <small class="form-text text-muted">Provide a brief description of your parking spot to entice renters!</small>
+                    </div>
+                </div>
+               <hr>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="paymentAmt">Payment Amount</label>
+                        <input id="paymentAmt" class="form-control" type="text" placeholder="$0.00">
+                     </div>
+                     <div class="form-group col-md-3">
+                         <label for="pmtFrq">Payment Frequency</label>
+                         <select id="pmtFrq" class="form-control">
+                            <option id="monthly">12/year (Monthly)</option>
+                            <option id="weekly">52/year  (Weekly)</option>
+                         </select>
+                     </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="col justify-content-right">
+                        <button class="btn btn-success btn-lg btn-block" id="next" type="submit">Let's Review this contract!</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <div id="helperContent" class="col-md-4">
+            <h1>Helper Stuff</h1>
         </div>
     </div>
-    </form>
-    
+
+<footer class="row">
+    <div class="col">
+        .
+        .
+        .
+    </div>
+</footer>
 </div>
